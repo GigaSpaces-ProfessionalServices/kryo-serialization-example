@@ -11,10 +11,6 @@
        http://www.openspaces.org/schema/remoting http://www.openspaces.org/schema/12.0/remoting/openspaces-remoting.xsd
        http://www.openspaces.org/schema/sla http://www.openspaces.org/schema/12.0/sla/openspaces-sla.xsd">
 
-
-  <!--
-      Spring property configurer which allows us to use system properties (such as user.name).
-  -->
   <bean id="propertiesConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
     <property name="properties">
       <props>

@@ -9,9 +9,6 @@
        http://www.openspaces.org/schema/core http://www.openspaces.org/schema/10.0/core/openspaces-core.xsd
        http://www.openspaces.org/schema/remoting http://www.openspaces.org/schema/10.0/remoting/openspaces-remoting.xsd">
 
-  <!--
-      Spring property configurer which allows us to use system properties (such as user.name).
-  -->
   <bean id="propertiesConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"/>
 
   <os-core:giga-space-context/>

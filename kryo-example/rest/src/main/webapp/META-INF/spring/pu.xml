@@ -16,19 +16,16 @@
 
   <mvc:annotation-driven/>
 
-  <!-- Enables to configure Spring beans through annotations   -->
   <context:annotation-config/>
-  <!-- Enable @PostPrimary and others annotation support. -->
+  
   <os-core:annotation-support/>
-  <!-- Enables using @Polling and @Notify annotations to creating polling and notify containers  -->
+  
   <os-events:annotation-support/>
-  <!-- Enables using @RemotingService and other remoting related annotations   -->
+  
   <os-remoting:annotation-support/>
 
-  <!-- Space Proxy -->
   <os-core:space id="space" url="jini://*/*/shoppingcart-space"/>
 
-  <!-- Define the GigaSpace instance that the application will use to access the space  -->
   <os-core:giga-space id="gigaSpace" space="space"/>
 
   <os-remoting:executor-proxy id="cartService"
